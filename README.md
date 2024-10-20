@@ -8,7 +8,11 @@ Codes are based on python and powershell commands.
 pip install pywin32
 
 2- Run the command to install the service:
-python usb_reset_service.py install
+python usb_reset_service.py install                  # Install the service and set "Startup Type: Manuel"
+
+or
+
+python usb_reset_service.py install --startup auto   # Install the service and set "Startup Type: Automatic"
 
 3- To start the service:
 python usb_reset_service.py start
